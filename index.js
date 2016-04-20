@@ -30,8 +30,5 @@ module.exports = {
             self.log('FB Message sent successfully');
             self.complete({});
         });
-        var results = { foo: 'bar' };
-        //Call this.complete with the module's output.  If there's an error, call this.fail(message) instead.
-        this.complete(results);
     }
 };
