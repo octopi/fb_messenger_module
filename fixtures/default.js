@@ -65,6 +65,13 @@ module.exports = _.merge({
             }
         }
          */
+         providers: {
+            facebook: {
+                page_data: {
+                    access_token: 'EAAMTi6BCJMgBAOblOmNZC58WDBoXs1nrxPe4M8Um1oTMGM7QjJOhQR2IofjfFIauZBETgxSazODUmjK8v7tNE1WJZBksum22XaZBdrZCZAQygZCZAMDJ19VcSop0AOLqQxUKYfxLPJYWyIsF73orl6ZB0eBmruSyzIWQdtDad1m1AMQZDZD'
+                }
+            }
+         }
     }
     , data: {
         local_test_step: {
@@ -73,7 +80,8 @@ module.exports = _.merge({
              */
             input: {
                 //Replace VAR1 with the name of an expected input, and add more inputs as needed.
-                VAR1: 'foo'
+                user_id: '1074784802592576',
+                message: 'test message from dexter CLI'
             }
         }
     }

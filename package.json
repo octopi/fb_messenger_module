@@ -1,12 +1,13 @@
 {
-    "name": "fb_messenger_module",
-    "version": "0.0.1",
-    "description": "",
-    "main": "index.js",
-    "author": "David Hu",
-    "license": "MIT",
-    "private": true,
-    "dependencies": {
-        "lodash": "^3.9.3"
-    }
+  "name": "fb_messenger_module",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "author": "David Hu",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "fb": "^1.0.2",
+    "lodash": "^3.9.3"
+  }
 }

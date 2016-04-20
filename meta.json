@@ -4,23 +4,17 @@
 {
     //Required. Inputs the module expects.
     "inputs": [
-        //e.g.
-        /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "user_id",
+            "title":"User ID"
+        },
+        {
+            "id": "message",
+            "title": "Message"
         }
-        */
     ],
     //Required. Outputs the module emits.
     "outputs": [
-      //e.g.
-      /*
-        {
-            "id": "from",
-            "title":"From"
-        }
-      */
     ],
     "title": "fb_messenger_module" /* Required.A display name for the module */
 }
