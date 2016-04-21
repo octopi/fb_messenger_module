@@ -13,18 +13,39 @@ module.exports = {
         var access_token = dexter.provider('facebook').data('page_data.access_token');
         FB.setAccessToken(access_token);
 
+        //TODO: check if both text and attachment exist
+        var input = {
+            user_id: step.input('user_id').first(),
+            text_message: step.input('text_message').first(),
+            attachment: step.input('attachment').first()
+        }
+
+        if (input.text_message !== null && input.attachment !== null) {
+            return self.fail('You must send one of EITHER text_message or attachment, not both.');
+        } else if (input.text_message === null && input.attachment === null) {
+            return self.fail('One of either text_message or attachment is required');
+        }
+
         var fbApiPostBody = {
             'recipient': {
-                'id': step.input('user_id').first()
-            },
-            'message': {
-                'text': step.input('message').first()
+                'id': input.user_id
             }
         };
 
+        if (input.text_message) {
+            fbApiPostBody.message = {
+                'text': input.text_message
+            };
+        } else if (input.attachment) {
+            fbApiPostBody.message = {
+                'attachment': input.attachment
+            };
+        }
+
         FB.api('me/messages', 'post', fbApiPostBody, function (res) {
             if (!res || res.error) {
-                return this.fail('Something went wrong with Facebook: ' + res);
+                console.log(res);
+                return self.fail('Something went wrong with Facebook: ' + res);
             }
 
             self.log('FB Message sent successfully');

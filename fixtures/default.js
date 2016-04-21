@@ -81,7 +81,36 @@ module.exports = _.merge({
             input: {
                 //Replace VAR1 with the name of an expected input, and add more inputs as needed.
                 user_id: '1074784802592576',
-                message: 'test message from dexter CLI'
+                // text_message: 'test message from dexter CLI',
+                attachment: {
+                    'type': 'template',
+                    'payload': {
+                        'template_type': 'generic',
+                        'elements': [
+                            {
+                                'title': 'first bubble',
+                                'image_url': 'https://media.giphy.com/media/Fc7LvGqKt3C8/giphy.gif',
+                                'buttons': [
+                                    {
+                                        'type': 'web_url',
+                                        'url': 'https://rundexter.com',
+                                        'title': 'take me to dexter!'
+                                    },
+                                    {
+                                        'type': 'postback',
+                                        'title': 'or send a ping to the callback',
+                                        'payload': 'hihihihih'
+                                    }
+                                ]
+                            },
+
+                            {
+                                'title': 'second bub',
+                                'image_url': 'https://media.giphy.com/media/Fc7LvGqKt3C8/giphy.gif',
+                            }
+                        ]
+                    }
+                }
             }
         }
     }

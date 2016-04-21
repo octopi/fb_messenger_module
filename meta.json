@@ -9,12 +9,16 @@
             "title":"User ID"
         },
         {
-            "id": "message",
-            "title": "Message"
+            "id": "text_message",
+            "title": "Text Message"
+        },
+        {
+            "id": "attachment",
+            "title": "Attachment (JSON)"
         }
     ],
     //Required. Outputs the module emits.
     "outputs": [
     ],
-    "title": "fb_messenger_module" /* Required.A display name for the module */
+    "title": "Send Facebook Message" /* Required.A display name for the module */
 }
