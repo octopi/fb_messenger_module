@@ -6,7 +6,8 @@
     "inputs": [
         {
             "id": "user_id",
-            "title":"User ID"
+            "title":"User ID",
+            "description": "Comes from the FB Messenger Trigger"
         },
         {
             "id": "text_message",
