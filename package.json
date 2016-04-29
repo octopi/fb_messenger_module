@@ -1,11 +1,11 @@
 {
   "name": "fb_messenger_module",
   "version": "0.0.1",
-  "description": "",
+  "description": "Send a Facebook Message from a Page you own, specified in the Facebook Bot Trigger",
   "main": "index.js",
   "author": "David Hu",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "dependencies": {
     "fb": "^1.0.2",
     "lodash": "^3.9.3"

@@ -14,11 +14,13 @@
         },
         {
             "id": "attachment",
-            "title": "Attachment (JSON)"
+            "title": "Attachment Message (BYO-JSON)",
+            "description": "Build your JSON object in Dexter code view. Needs to conform to FB's specs"
         }
     ],
     //Required. Outputs the module emits.
     "outputs": [
     ],
-    "title": "Send Facebook Message" /* Required.A display name for the module */
+    "title": "Send Facebook Message",
+	"icon": "dex-messenger"
 }
