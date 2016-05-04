@@ -1,6 +1,6 @@
 {
   "name": "fb_messenger_module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Send a Facebook Message from a Page you own, specified in the Facebook Bot Trigger",
   "main": "index.js",
   "author": "David Hu",
